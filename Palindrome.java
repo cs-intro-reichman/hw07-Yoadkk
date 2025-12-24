@@ -18,12 +18,9 @@ public class Palindrome {
 
 
 		if (s.charAt(0) == s.charAt(s.length()-1)){
-			return true;
+			return isPalindrome(s.substring(x+1,length-1));
 		}
 
-		if (isPalindrome(s.substring(x+1,length-1)) != true){
-			return false;
-		}
 
 		return false;
     }
