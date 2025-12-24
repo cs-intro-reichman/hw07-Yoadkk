@@ -11,7 +11,11 @@ public class Palindrome {
 		boolean isPali = true;
 		int x = 0;
 		int length = s.length();
-		if(x == s.length()){
+		
+		if(s.length()==1){
+			return isPali;
+		}
+		if(s.length()==0){
 			return isPali;
 		}
 
